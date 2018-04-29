@@ -1,0 +1,59 @@
+<!-- 标签，徽章，well(方框) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap3/css/bootstrap.min.css">
+    <!--[if lt IE 9]>
+        <script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="http://oss.macdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        .label {
+            -webkit-box-shadow: 2px 2px 2px #dfdfdf;
+            box-shadow:2px 2px 2px #dfdfdf;
+            border:medium dotted #fff;
+        }
+
+        .label-default {
+            background-image:-webkit-linear-gradient(270deg, rgba(153, 153, 153, 1.00) 0%, rgba(255, 255, 255, 1.00) 100%);
+            background-image:linear-gradient(180deg, rgba(153, 153, 153, 1.00) 0%, rgba(255, 255, 255, 1.00) 100%);
+            color:#000000;
+        }
+    </style>
+</head>
+<body>
+    <!-- 标签 -->
+    <p>
+        <span class="label label-default">Default</span>
+        <span class="label label-primary">Primary</span>
+        <span class="label label-success">Success</span>
+        <span class="label label-info">Info</span>
+        <span class="label label-warning">Warning</span>
+        <span class="label label-danger">Danger</span>
+    </p>
+    
+    <!-- 徽章 -->
+    <p>
+        <a href="#">Inbox<span class="badge">4</span></a>   <!-- 有数字4 -->
+        <a href="#">Inbox<span class="badge">0</span></a>   <!-- 有数字0 -->
+        <a href="#">Inbox<span class="badge"></span></a>    <!-- 无任何内容 -->
+    </p>
+
+    <!-- 方框 -->
+    <p>This is standard content.</p>
+    <p class="well">This content is inside a well</p>
+    <p class="well well-lg">This content is in a large well</p>
+    <p class="well well-sm">This content is in a small well</p>
+    <blockquote>This content is inside a blockquote</blockquote>
+    <div class="well">
+        <blockquote>This content is inside a blockquote inside a well</blockquote>
+    </div>
+
+    <script src="jquery-3.3.1.js"></script>
+    <script src="bootstrap3/js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!-- 标题和子标题 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap3/css/bootstrap.min.css">
+    <!--[if lt IE 9]>
+        <script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="http://oss.macdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <h1 class="page-header">Form Demo</h1>
+        <form action="">
+            <div class="form-group">
+                <label for="cost">amount</label>
+                <div class="input-group">
+                    <div class="input-group-addon">$</div>
+                    <div><input type="number" required name="" id="cost" class="form-control" placeholder="amount"></div>
+                    <div class="input-group-addon">.00</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="userName">User Name</label>
+                <div class="input-group input-group-lg">
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                    <input type="text" required id="userName" class="form-control" placeholder="user name">
+                </div>            
+            </div>
+
+            <div class="form-group">
+                <label for="userName1">User Name</label>
+                <div class="input-group input-group-sm">
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                    <input type="text" required id="userName1" class="form-control" placeholder="user name">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label for="otherText">Other Text</label>
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <input type="checkbox" name="" id="">
+                            </span>
+                            <input type="text" id="otherText" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label for="otherText2">Other Text2</label>
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <input type="radio" name="" id="radio1">
+                            </span>
+                            <input type="text" id="otherText2" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="input1">input1</label>
+                <input type="text" class="form-control" disabled id="input1" placeholder="input1">
+            </div>
+
+            <div class="form-group">
+                <label for="input2">input2</label>
+                <input type="text" class="form-control" readonly id="input2" placeholder="input2" value="aa">
+            </div>
+
+            <div class="form-group has-success">
+                <label for="input3">input3</label>
+                <input type="text" class="form-control" placeholder="input3">
+            </div>
+
+            <div class="form-group has-warning">
+                <label for="input4">input4</label>
+                <input type="text" class="form-control" placeholder="input4">
+            </div>
+
+            <div class="form-group has-error">
+                <label for="input5">input5</label>
+                <input type="text" class="form-control" placeholder="input5">
+            </div>
+
+            <div class="form-group has-error has-feedback">
+                <label for="input6">input6</label>
+                <input type="text" class="form-control" placeholder="input6">
+                <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+            </div>
+        </form>
+    </div>
+
+    <script src="jquery-3.3.1.js"></script>
+    <script src="bootstrap3/js/bootstrap.js"></script>
+</body>
+
+</html>

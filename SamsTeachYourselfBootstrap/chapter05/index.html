@@ -1,0 +1,105 @@
+<!-- 网格布局 col-[size]-[width] -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!--[if lt IE 9]>
+        <script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="http://oss.macdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        aside {
+            background-color: #E8E8E7;
+        }
+        article {
+            background-color: #aaaaaa;
+        }
+        div {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <section class="row">
+            <aside class="col-lg-1">
+                <h2>Column 1</h2>
+            </aside>
+            <article class="col-lg-1">
+                <h2>Column 2</h2>
+            </article>
+        </section>
+        <section class="row">
+            <aside class="col-md-4">
+                <h2>Column 1</h2>
+            </aside>
+            <article class="col-md-4">
+                <h2>Column 2</h2>
+            </article>
+            <aside class="col-md-4">
+                <h2>Column 3</h2>
+            </aside>
+        </section>
+        <section class="row">
+            <aside class="col-md-2">
+                <h2>Column 1</h2>
+            </aside>
+            <article class="col-md-6">
+                <h2>Column 2</h2>
+            </article>
+            <aside class="col-md-4">
+                <h2>Column 3</h2>
+            </aside>
+        </section>
+        <div class="row">
+            <div class="col-md-4" >
+                <div class="row">
+                    <div class="col-xs-8 col-sm-6">
+                        Level 1: 
+                    </div>
+                    <div class="col-xs-4 col-sm-6">
+                        Level 2: 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-8 col-sm-6">
+                        Level 1: 
+                    </div>
+                    <div class="col-xs-4 col-sm-6">
+                        Level 2: 
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-xs-8 col-sm-6">
+                        Level 1: 
+                    </div>
+                    <div class="col-xs-4 col-sm-6">
+                        Level 2: 
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-xs-8 col-sm-6">
+                        Level 1: 
+                    </div>
+                    <div class="col-xs-4 col-sm-6">
+                        Level 2: 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="jquery-3.3.1.js"></script>
+    <script src="bootstrap3/js/bootstrap.js"></script>
+</body>
+</html>

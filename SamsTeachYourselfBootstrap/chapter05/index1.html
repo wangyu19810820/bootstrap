@@ -1,0 +1,63 @@
+<!-- 一列超宽，另几列超窄，可能导致页面显示不正常，需要清理clearfix -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!--[if lt IE 9]>
+        <script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="http://oss.macdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        .row div {
+            background-color: #E8E8E7;
+            /* border: 1px solid #000; */
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">       
+            <div class="col-xs-6 col-sm-3">
+                This is a very very very long column. That might not load correctly in all browsers.
+                This is a very very very long column. That might not load correctly in all browsers.
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                short column
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                short column
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                short column
+            </div>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <div class="row">
+            <div class="col-xs-6 col-sm-3">
+                This is a super long column that might not load correctly in all browsers
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                short column
+            </div>
+            <div class="clearfix visible-xs-block"></div>
+            <div class="col-xs-6 col-sm-3">
+                short column
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                short column
+            </div>
+        </div>
+    </div>
+
+    <script src="jquery-3.3.1.js"></script>
+    <script src="bootstrap3/js/bootstrap.js"></script>
+</body>
+</html>

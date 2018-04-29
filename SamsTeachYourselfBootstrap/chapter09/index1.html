@@ -1,0 +1,110 @@
+<!-- 标题和子标题 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap3/css/bootstrap.min.css">
+    <!--[if lt IE 9]>
+        <script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="http://oss.macdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="pageHeader">
+            <h1>Form Demos</h1>
+        </div>
+        <form action="">
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" autofocus required id="firstName" placeholder="First Name" class="form-control">
+                <p class="help_block">This text describes a form field.</p>
+            </div>
+            <div class="form-group">
+                <label for="firstNameLg">First Name</label>
+                <input type="text" autofocus required id="firstNameLg" placeholder="First Name" class="form-control input-lg">
+            </div>
+            <div class="form-group">
+                <label for="firstNameSm">First Name</label>
+                <input type="text" autofocus required id="firstNameSm" placeholder="First Name" class="form-control input-sm">
+            </div>
+            <div class="form-group">
+                <label for="secondName">Second Name</label>
+                <input type="text" autofocus required id="secondName" placeholder="Second Name" class="form-control">
+            </div>
+            <div class="form-group-lg">
+                <label for="secondNameLg">Second Name</label>
+                <input type="text" autofocus required id="secondNameLg" placeholder="Second Name" class="form-control">
+            </div>
+            <div class="form-group-sm">
+                <label for="secondNameSm">Second Name</label>
+                <input type="text" autofocus required id="secondNameSm" placeholder="Second Name" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="introduce">Introduce</label>
+                <textarea name="introduce" id="introduce" class="form-control" cols="30" rows="5"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="select">Introduce</label>
+                <select name="" id="" class="form-control">
+                    <option value="a">a</option>
+                    <option value="b">b</option>
+                    <option value="c">c</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <p id="email" class="form-control-static">email@example.com</p>
+            </div>
+            <div class="checkbox">
+                <label for="chk_1">
+                    <input id="chk_1" type="checkbox" value="one">
+                    Option one
+                </label>
+            </div>
+            <div class="checkbox">
+                <label for="chk_2">
+                    <input id="chk_2" type="checkbox" value="two">
+                    Option two
+                </label>
+            </div>
+            <div class="checkbox disabled">
+                <label for="chk_3">
+                    <input id="chk_3" type="checkbox" value="three" disabled>
+                    Option three - disabled
+                </label>
+            </div>
+            <div class="radio">
+                <label for="opt_1">
+                    <input id="opt_1" type="radio" value="r-one" name="radio">
+                    First radio button
+                </label>
+            </div>
+            <div class="radio">
+                <label for="opt_2">
+                    <input id="opt_2" type="radio" value="r-two" name="radio">
+                    Second radio button
+                </label>
+            </div>
+            <div class="radio disabled">
+                <label for="opt_3">
+                    <input id="opt_3" type="radio" value="r-three" name="radio" disabled>
+                    Third radio button - disabled
+                </label>
+            </div>
+        </form>
+    </div>
+
+    <script src="jquery-3.3.1.js"></script>
+    <script src="bootstrap3/js/bootstrap.js"></script>
+</body>
+
+</html>
