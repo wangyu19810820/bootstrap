@@ -1,0 +1,69 @@
+<!-- 标题和子标题 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap3/css/bootstrap.min.css">
+    <!--[if lt IE 9]>
+        <script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="http://oss.macdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <nav>
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#">aa</a></li>
+                <li><a href="#">bb</a></li>
+                <li class="disabled"><a href="a.html" onclick="click1()">cc</a></li>
+            </ul>
+        </nav>
+        <br>
+
+        <nav>
+            <ul class="nav nav-pills">
+                <li class="active"><a href="#">aa</a></li>
+                <li><a href="#">bb</a></li>
+                <li class="disabled"><a href="#">cc</a></li>
+            </ul>
+        </nav>
+        <br>
+
+        <nav>
+            <ul class="nav nav-pills nav-justified">
+                <li class="active"><a href="#">aa</a></li>
+                <li><a href="#">bb</a></li>
+                <li class="disabled"><a href="#">cc</a></li>
+            </ul>
+        </nav>
+        <br>
+
+        <nav>
+            <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a href="#">nav1</a></li>
+                <li><a href="#">nav2</a></li>
+                <li class="disabled"><a href="#">nav3</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <script src="jquery-3.3.1.js"></script>
+    <script src="bootstrap3/js/bootstrap.js"></script>
+    <script>
+        function click1() {
+            alert('ok');
+        }
+    </script>
+</body>
+
+</html>
