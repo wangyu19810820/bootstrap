@@ -1,0 +1,60 @@
+<!-- 标题和子标题 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap3/css/bootstrap.min.css">
+    <!--[if lt IE 9]>
+        <script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="http://oss.macdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <br><br><br>
+        <button id="btn1" class="btn btn-default" title="btn1 tooltip!">button</button>
+
+        <!-- h5的data-*调用bootstrap的js插件 -->
+        <button id="btn2" class="btn btn-default" title="btn2 tooltip!"
+                data-toggle="tooltip" data-html="true"
+                data-delay="200" data-trigger="click">button</button>
+
+    </div>
+
+    <script src="jquery-3.3.1.js"></script>
+    <script src="bootstrap3/js/bootstrap.js"></script>
+    <script>
+        $(function() {
+            // 初始化tooltip，否则无效果
+            $("[data-toggle='tooltip']").tooltip();
+
+            // js调用bootstrap的js插件
+            // 按钮btn1添加tooltip
+            // $('#btn1').tooltip();
+            // $('#btn1').tooltip('toggle');    // 立即显示btn1上的tooltip
+            $('#btn1').tooltip({
+                html:true,
+                delay:200,
+                trigger:'click'
+            });
+
+            // 调用构造函数属性，访问或更改默认设置
+            // $.fn.tooltip.Constructor.DEFAULTS.html = true;
+
+            // 禁用数据属性
+            // $(document).off('.data-api');
+            // $(document).off('.tooltip.data-api');
+        });
+
+    </script>
+</body>
+
+</html>
