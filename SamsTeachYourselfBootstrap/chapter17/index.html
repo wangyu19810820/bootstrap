@@ -1,4 +1,4 @@
-<!-- 模态框，js显示模态框，h5的data-*显示模态框，4个事件，初始化页面时显示模态框 -->
+<!-- tooltip -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,77 +19,43 @@
 <body>
 
     <div class="container">
+        <button class="btn btn-default" title="tooltip1" data-placement="auto top"
+                data-toggle="tooltip" data-trigger="click">button</button>
+        <br><br><br>
 
-         <nav class="col-md-4" id="myTabs">
-            <ul class="list-group" data-spy="affix">
-                <li class="list-group-item"><a href="#section1">section1</a></li>
-                <li class="list-group-item"><a href="#section2">section2</a></li>
-                <li class="list-group-item"><a href="#section3">section3</a></li>
+        <button class="btn btn-default" title="tooltip1" 
+                data-toggle="tooltip" data-trigger="hover">button</button>
+
+        <button class="btn btn-default" title="tooltip1" data-placement="bottom"
+                data-toggle="tooltip" data-trigger="focus">button</button>
+
+        <button class="btn btn-default" title="tooltip1" data-placement="left" data-trigger="click"
+                data-toggle="tooltip" data-template='<div class="tooltip"><div class="tooltip-inner" style="padding:20px"></div></div>'>template</button>
+
+        <button id="btn1" class="btn btn-default" title="<em>tooltip1</em><small>aaa</small>" 
+                data-placement="right" data-html="true"
+                data-toggle="tooltip" data-trigger="click">button</button>
+
+        <div class="btn-group">
+            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                button <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#" title="tooltip1-loooo oooo 00000 0000000 ooo ooong" 
+                        data-toggle="tooltip" data-container="body">aa1</a></li>
+                <li><a href="#">aa2</a></li>
+                <li><a href="#">aa3</a></li>
             </ul>
-        </nav>
-
-        <div class="col-md-8">
-            <h2 id="section1">section1</h2>
-            <p>
-                1Includes a modal-backdrop element. Alternatively, specify static for a backdrop 
-                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
-                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
-                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
-                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
-                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
-                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
-                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
-                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
-                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
-                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
-                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
-                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
-                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
-                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
-            </p>
-            <h2 id="section2">section2</h2>
-            <p>
-                2Includes a modal-backdrop element. Alternatively, specify static for a backdrop 
-                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
-                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
-                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
-                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
-                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
-                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
-                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
-                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
-                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
-                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
-                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
-                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
-                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
-                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
-            </p>
-            <h2 id="section3">section3</h2>
-            <p>
-                3Includes a modal-backdrop element. Alternatively, specify static for a backdrop 
-                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
-                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
-                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
-                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
-                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
-                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
-                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
-                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
-                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
-                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
-                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
-                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
-                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
-                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
-            </p>
-         </div>
+        </div>
     </div>
 
     <script src="jquery-3.3.1.js"></script>
     <script src="bootstrap3/js/bootstrap.js"></script>
     <script>
        
+       $(function(){
+           $('[data-toggle=tooltip]').tooltip();
+       })
 
     </script>
 </body>
