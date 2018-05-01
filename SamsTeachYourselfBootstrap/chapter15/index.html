@@ -1,0 +1,113 @@
+<!-- 模态框，js显示模态框，h5的data-*显示模态框，4个事件，初始化页面时显示模态框 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap3/css/bootstrap.min.css">
+    <!--[if lt IE 9]>
+        <script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="http://oss.macdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <br><br><br>
+        <button id="btn1" class="btn btn-default" onclick="showModal1()">显示模态框</button>
+        <button id="btn1" class="btn btn-default" data-toggle="modal" data-target="#MyModal2">显示模态框</button>
+        <a href="#MyModal3" class="" data-toggle="modal">显示模态框</a>
+
+
+        <div class="modal" id="MyModal1" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <p>This is a model window.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="MyModal2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">模态框标题</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="a.jpg" alt="" class="col-md-3 img-rounded pull-left">
+                        <p>This is a model window.</p>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="MyModal3">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">模态框标题</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="a.jpg" alt="" class="col-md-3 img-rounded pull-left">
+                        <p>This is a model window.</p>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="jquery-3.3.1.js"></script>
+    <script src="bootstrap3/js/bootstrap.js"></script>
+    <script>
+        $(document).ready(function(){
+            // 事件：显示前
+            $('#MyModal1').on('show.bs.modal', function(){
+                console.log('show');
+            })
+            // 事件：显示后
+            $('#MyModal1').on('shown.bs.modal', function(){
+                console.log('shown');
+            })
+            // 事件：关闭前
+            $('#MyModal1').on('hide.bs.modal', function(){
+                console.log('hide');
+            })
+            // 事件：关闭后
+            $('#MyModal1').on('hidden.bs.modal', function(){
+                console.log('hidden');
+            })
+
+            window.setTimeout(() => {
+                // 页面载入后2秒显示模态框
+                $('#MyModal2').modal('show');
+            }, 2000);
+        });
+        function showModal1() {
+            $('#MyModal1').modal({
+                backdrop:true,  // true有背景，点击背景取消模态框，false无背景，'static'有背景，但是点击背景无法关闭模态框
+                keyboard:true,  // 按esc关闭模态框,文档上如此描述，实测发现没效果
+                show:true,      // 初始化后立即显示
+            });
+        }
+
+    </script>
+</body>
+
+</html>

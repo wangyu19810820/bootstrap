@@ -1,0 +1,70 @@
+<!-- 模态框，通过事件，动态指定模态框的内容 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap3/css/bootstrap.min.css">
+    <!--[if lt IE 9]>
+        <script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="http://oss.macdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    </style>
+</head>
+
+<body>
+
+        <br><br><br>
+        <button id="btn1" class="btn btn-default" 
+                data-toggle="modal" data-target="#MyModal1"
+                data-imgsrc="a.jpg" data-imgtitle="图片1">显示模态框</button>
+        <button id="btn1" class="btn btn-default" 
+                data-toggle="modal" data-target="#MyModal1"
+                data-imgsrc="b.jpg" data-imgtitle="图片2">显示模态框</button>
+        <button id="btn1" class="btn btn-default" 
+                data-toggle="modal" data-target="#MyModal1"
+                data-imgsrc="c.png" data-imgtitle="图片3">显示模态框</button>
+
+
+        <div class="modal fade" id="MyModal1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal">&times;</button>
+                        <h4 id="title1" class="modal-title"></h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <img src="" id="img1" class="col-md-3 img-responsive"> 
+                            <p class="col-md-9">bbb</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    <script src="jquery-3.3.1.js"></script>
+    <script src="bootstrap3/js/bootstrap.js"></script>
+    <script>
+
+        $(function(){
+            $('#MyModal1').on('show.bs.modal', function(e){
+                var button = $(e.relatedTarget);
+                var modal = $(this);
+                modal.find('#title1').text(button.data('imgtitle'));
+                modal.find('#img1').attr("src", button.data('imgsrc'));
+            });
+        });
+
+    </script>
+</body>
+
+</html>
