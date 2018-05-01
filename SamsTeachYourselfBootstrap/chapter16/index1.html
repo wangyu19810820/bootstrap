@@ -1,0 +1,131 @@
+<!-- 模态框，js显示模态框，h5的data-*显示模态框，4个事件，初始化页面时显示模态框 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap3/css/bootstrap.min.css">
+    <!--[if lt IE 9]>
+        <script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="http://oss.macdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+       
+        <ul class="nav nav-pills" id="MyTabs">
+            <li class="active"><a href="#section1">Section1</a></li>
+            <li><a href="#section2">Section2</a></li>
+            <li><a href="#section3">Section3</a></li>
+        </ul>
+
+
+        <div class="tab-content">
+            <div class="tab-pane fade in active" id="section1">
+                <h2 >section1</h2>
+                <p>
+                    1Includes a modal-backdrop element. Alternatively, specify static for a backdrop 
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                </p>
+            </div>
+            <div class="tab-pane fade in" id="section2">
+                <h2 >section2</h2>
+                <p>
+                    2Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                </p>
+            </div>
+            <div class="tab-pane fade in" id="section3">
+                <h2 >section3</h2>
+                <p>
+                    3Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop 
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                    Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="jquery-3.3.1.js"></script>
+    <script src="bootstrap3/js/bootstrap.js"></script>
+    <script>
+        $(function(){
+            var hash = window.location.hash;
+            console.log(hash)
+            console.log($('ul.nav a[href="' + hash + '"]'));
+            hash && $('ul.nav a[href="' + hash + '"]').tab('show');
+            $('#MyTabs a').click(function(e){
+                $(this).tab('show');
+            })
+       });
+
+    </script>
+</body>
+
+</html>

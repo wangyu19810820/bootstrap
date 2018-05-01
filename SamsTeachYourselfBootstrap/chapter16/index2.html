@@ -13,22 +13,31 @@
         <script src="http://oss.macdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style>
+
+        body {
+            position: relative;
+        }
+        .nav-pills {
+            width:150px;
+        }
+ 
     </style>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#myNav">
 
     <div class="container">
+        <div class="col-md-3">
+            <nav id="myNav" data-spy="affix">
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a href="#section1">Section1</a></li>
+                    <li><a href="#section2">Section2</a></li>
+                    <li><a href="#section3">Section3</a></li>
+                </ul>
+            </nav>
+        </div>
 
-         <nav class="col-md-4" id="myTabs">
-            <ul class="list-group" data-spy="affix">
-                <li class="list-group-item"><a href="#section1">section1</a></li>
-                <li class="list-group-item"><a href="#section2">section2</a></li>
-                <li class="list-group-item"><a href="#section3">section3</a></li>
-            </ul>
-        </nav>
-
-        <div class="col-md-8">
+        <article class="col-md-9">
             <h2 id="section1">section1</h2>
             <p>
                 1Includes a modal-backdrop element. Alternatively, specify static for a backdrop 
@@ -38,7 +47,16 @@
                 Includes a modal-backdrop element. Alternatively, specify static for a backdrop
                 Includes a modal-backdrop element. Alternatively, specify static for a backdrop
                 Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                Includes a modal-backdrop element. Alternatively, specify static for a backdrop  
+                Includes a modal-backdrop element. Alternatively, specify static for a backdrop 
                 Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                Includes a modal-backdrop element. Alternatively, specify static for a backdrop 
                 Includes a modal-backdrop element. Alternatively, specify static for a backdrop
                 Includes a modal-backdrop element. Alternatively, specify static for a backdrop
                 Includes a modal-backdrop element. Alternatively, specify static for a backdrop
@@ -57,6 +75,15 @@
                 Includes a modal-backdrop element. Alternatively, specify static for a backdrop
                 Includes a modal-backdrop element. Alternatively, specify static for a backdrop
                 Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                Includes a modal-backdrop element. Alternatively, specify static for a backdrop 
+                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                Includes a modal-backdrop element. Alternatively, specify static for a backdrop 
                 Includes a modal-backdrop element. Alternatively, specify static for a backdrop
                 Includes a modal-backdrop element. Alternatively, specify static for a backdrop
                 Includes a modal-backdrop element. Alternatively, specify static for a backdrop
@@ -75,6 +102,15 @@
                 Includes a modal-backdrop element. Alternatively, specify static for a backdrop
                 Includes a modal-backdrop element. Alternatively, specify static for a backdrop
                 Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                Includes a modal-backdrop element. Alternatively, specify static for a backdrop 
+                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                Includes a modal-backdrop element. Alternatively, specify static for a backdrop
+                Includes a modal-backdrop element. Alternatively, specify static for a backdrop 
                 Includes a modal-backdrop element. Alternatively, specify static for a backdrop
                 Includes a modal-backdrop element. Alternatively, specify static for a backdrop
                 Includes a modal-backdrop element. Alternatively, specify static for a backdrop
@@ -83,14 +119,18 @@
                 Includes a modal-backdrop element. Alternatively, specify static for a backdrop
                 Includes a modal-backdrop element. Alternatively, specify static for a backdrop
             </p>
-         </div>
+        </article>
     </div>
 
     <script src="jquery-3.3.1.js"></script>
     <script src="bootstrap3/js/bootstrap.js"></script>
     <script>
        
-
+        // $(function(){
+        //     $('#myNav').affix({
+        //         bottom:0,
+        //     })
+        // })
     </script>
 </body>
 
