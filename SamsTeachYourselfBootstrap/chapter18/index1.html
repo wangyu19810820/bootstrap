@@ -1,0 +1,54 @@
+<!-- 警告框 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap3/css/bootstrap.min.css">
+    <!--[if lt IE 9]>
+        <script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="http://oss.macdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="alert alert-info alert-dissmissible">
+            <button class="close" data-dismiss="alert">&times;</button>
+            Info!<a href="#" class="alert-link">link</a>
+        </div>
+        <div id="alert1" class="alert alert-success alert-dissmissible fade in">
+            <button class="close" data-dismiss="alert">&times;</button>
+            Success!<a href="#" class="alert-link" onclick="closeAlert()">close</a>
+        </div>
+        <div class="alert alert-warning alert-dissmissible">
+            <button class="close" data-dismiss="alert">&times;</button>
+            Warning!<a href="#" class="alert-link">link</a>
+        </div>
+        <div class="alert alert-danger alert-dissmissible">
+            <button class="close" data-dismiss="alert">&times;</button>
+            Danger!<a href="#" class="alert-link">link</a>
+        </div>
+
+    </div>
+
+    <script src="jquery-3.3.1.js"></script>
+    <script src="bootstrap3/js/bootstrap.js"></script>
+    <script>
+
+        function closeAlert() {
+            $('#alert1').alert('close')
+        }
+
+
+    </script>
+</body>
+
+</html>

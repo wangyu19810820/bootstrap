@@ -1,0 +1,94 @@
+<!-- 按钮 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap3/css/bootstrap.min.css">
+    <!--[if lt IE 9]>
+        <script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="http://oss.macdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <button class="btn btn-primary" id="btn1" autocomplete="off" data-loading-text="Loading..." data-complete-text="Done">button</button>
+
+        <button class="btn btn-default" autocomplete="off" data-toggle="button">点击切换状态</button>
+
+        <button class="btn btn-default active" autocomplete="off" data-toggle="button">点击切换状态</button>
+
+        <div class="btn-group" data-toggle="buttons">
+            <label for="" class="btn btn-primary active">
+                <input type="checkbox" name="" id="" autocomplete="off" checked>体育
+            </label>
+            <label for="" class="btn btn-primary">
+                <input type="checkbox" name="" id="" autocomplete="off">文学
+            </label>
+            <label for="" class="btn btn-primary">
+                <input type="checkbox" name="" id="" autocomplete="off">音乐
+            </label>
+        </div>
+
+        <div class="btn-group" data-toggle="buttons">
+            <label for="" class="btn btn-primary active">
+                <input type="radio" name="" id="" autocomplete="off" checked>本科
+            </label>
+            <label for="" class="btn btn-primary">
+                <input type="radio" name="" id="" autocomplete="off">硕士
+            </label>
+            <label for="" class="btn btn-primary">
+                <input type="radio" name="" id="" autocomplete="off">博士
+            </label>
+        </div>
+
+        <br>
+
+        <button class="btn btn-default" onclick="btnClick1()">改变第一个按钮选中状态</button>
+        <button class="btn btn-default" onclick="btnClick2()">重置第一个按钮状态</button>
+        <button class="btn btn-default" onclick="btnClick3()">改变第一个按钮状态至data-*-text所定义的状态</button>
+        <button class="btn btn-default" onclick="btnClick4()">改变第一个按钮状态至data-loading-text状态</button>
+    </div>
+
+    <script src="jquery-3.3.1.js"></script>
+    <script src="bootstrap3/js/bootstrap.js"></script>
+    <script>
+
+        $(function () {
+            $('#btn1').on('click', function () {
+                var btn = $(this);
+                btn.button('loading');
+                setTimeout(function () {
+                    btn.button('complete');
+                }, 2000);
+            });
+        })
+
+        function btnClick1() {
+            $('#btn1').button('toggle');
+        }
+
+        function btnClick2() {
+            $('#btn1').button('reset');
+        }
+
+        function btnClick3() {
+            $('#btn1').button('complete');
+        }
+
+        function btnClick4() {
+            $('#btn1').button('loading');
+        }
+
+
+    </script>
+</body>
+
+</html>
