@@ -1,0 +1,84 @@
+<!-- 按钮 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap3/css/bootstrap.min.css">
+    <!--[if lt IE 9]>
+        <script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="http://oss.macdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <section class="panel-group" id="group1">
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="#moreDetail1" data-toggle="collapse" data-parent="#group1">data 属性</a>
+                </h4>
+            </div>
+            <div class="collapse in" id="moreDetail1">
+                <div class="panel-body">
+                    你可以仅仅通过 data 属性 API 就能使用所有的 Bootstrap 插件，无需写一行 JavaScript 代码。这是 Bootstrap 中的一等 API，也应该是你的首选方式。
+                    话又说回来，在某些情况下可能需要将此功能关闭。因此，我们还提供了关闭 data 属性 API 的方法，即解除以 data-api 为命名空间并绑定在文档上的事件。就像下面这样：
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="#moreDetail2" data-toggle="collapse" data-parent="#group1">事件</a>
+                </h4>
+            </div>
+            <div class="collapse" id="moreDetail2">
+                <div class="panel-body">
+                    Bootstrap 为大部分插件所具有的动作提供了自定义事件。一般来说，这些事件都有不定式和过去式两种动词的命名形式，例如，不定式形式的动词（例如 show）表示其在事件开始时被触发；而过去式动词（例如 shown ）表示在动作执行完毕之后被触发。
+                    从 3.0.0 版本开始，所有 Bootstrap 事件的名称都采用命名空间方式。
+                    所有以不定式形式的动词命名的事件都提供了 preventDefault 功能。这就赋予你在动作开始执行前将其停止的能力。
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="#moreDetail3" data-toggle="collapse" data-parent="#group1">Varying modal content</a>
+                </h4>
+            </div>
+            <div class="collapse" id="moreDetail3">
+                <div class="panel-body">
+                    Have a bunch of buttons that all trigger the same modal, 
+                    just with slightly different contents? Use event.relatedTarget 
+                    and HTML data-* attributes (possibly via jQuery) to vary the contents 
+                    of the modal depending on which button was clicked. See the Modal Events
+                     docs for details on relatedTarget,                
+                </div>
+            </div>
+        </div>
+        
+
+    </section>
+
+    <script src="jquery-3.3.1.js"></script>
+    <script src="bootstrap3/js/bootstrap.js"></script>
+    <script>
+
+        $(function () {
+
+        })
+
+
+
+
+    </script>
+</body>
+
+</html>

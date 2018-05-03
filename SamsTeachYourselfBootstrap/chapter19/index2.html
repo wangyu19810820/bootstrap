@@ -1,0 +1,75 @@
+<!-- 按钮 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap3/css/bootstrap.min.css">
+    <!--[if lt IE 9]>
+        <script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="http://oss.macdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="col-md-3">
+            <div id="group1">
+
+                <div class="panel list-group">
+                    <a class="list-group-item" href="#moreDetail1" data-toggle="collapse" data-parent="#group1">
+                        aa<span class="pull-right glyphicon glyphicon-chevron-down"></span>
+                    </a>
+                    <div class="collapse in submenu" id="moreDetail1">
+                        <a href="#" class="list-group-item small">aa1</a>
+                        <a href="#" class="list-group-item small">aa2</a>
+                        <a href="#" class="list-group-item small">aa3</a>
+                    </div>
+                    <a class="list-group-item" href="#moreDetail2" data-toggle="collapse" data-parent="#group1">
+                        bb<span class="pull-right glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                    <div class="collapse" id="moreDetail2">
+                        <a href="#" class="list-group-item small">bb1</a>
+                        <a href="#" class="list-group-item small">bb2</a>
+                        <a href="#" class="list-group-item small">bb3</a>
+                    </div>
+                    <a class="list-group-item" href="#moreDetail3" data-toggle="collapse" data-parent="#group1">
+                        cc<span class="pull-right glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                    <div class="collapse" id="moreDetail3">
+                        <a href="#" class="list-group-item small">cc1</a>
+                        <a href="#" class="list-group-item small">cc2</a>
+                        <a href="#" class="list-group-item small">cc3</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="jquery-3.3.1.js"></script>
+    <script src="bootstrap3/js/bootstrap.js"></script>
+    <script>
+
+        $(function () {
+            $('.collapse').on('show.bs.collapse', function(){
+                $(this).prev("a").children("span").removeClass("glyphicon-chevron-right").addClass("glyphicon-chevron-down");
+            });
+            $('.collapse').on('hide.bs.collapse', function(){
+                $(this).prev("a").children("span").addClass("glyphicon-chevron-right").removeClass("glyphicon-chevron-down");
+            });
+        })
+
+
+
+
+    </script>
+</body>
+
+</html>

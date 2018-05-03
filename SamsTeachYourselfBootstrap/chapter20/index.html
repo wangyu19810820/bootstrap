@@ -1,0 +1,60 @@
+<!-- 轮播 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap3/css/bootstrap.min.css">
+    <!--[if lt IE 9]>
+        <script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="http://oss.macdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        .carousel-inner .item h1 {
+            height: 550px;
+            line-height: 550px;
+            text-align: center;
+            background-color: gray;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="carousel slide" id="myCarousel" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div id="c1" class="item active">
+                    <h1>Side 1</h1>
+                </div>
+                <div id="c2" class="item">
+                    <h1>Side 2</h1>
+                </div>
+                <div id="c3" class="item">
+                    <h1>Side 3</h1>
+                </div>
+            </div>
+            <a href="#myCarousel" class="left carousel-control" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a href="#myCarousel" class="right carousel-control" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+
+
+    <script src="jquery-3.3.1.js"></script>
+    <script src="bootstrap3/js/bootstrap.js"></script>
+
+</body>
+
+</html>
